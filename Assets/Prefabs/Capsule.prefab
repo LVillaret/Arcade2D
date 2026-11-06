@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6561574831380194280}
   - component: {fileID: 5671081891804771678}
   - component: {fileID: 3832397587644406819}
-  - component: {fileID: -2034085100741266132}
+  - component: {fileID: 7835064751751332721}
+  - component: {fileID: 4290736192927316850}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -190,7 +191,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &-2034085100741266132
+--- !u!114 &7835064751751332721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,9 +200,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 4372113353455015592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2970ba03f494fbdaf74505e6597fb0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 04fdf23e228842f38543bd023eeca9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputController
+  Move: {x: 0, y: 0}
+  IsJumping: 0
+--- !u!114 &4290736192927316850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372113353455015592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581c46865ec940b49b145bd3c83c3b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  _speed: 10
+  _airControl: 10
+  _jumpForce: 10
+  _groundCheckDistance: 1
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &4804347106764288947
 GameObject:
   m_ObjectHideFlags: 0
