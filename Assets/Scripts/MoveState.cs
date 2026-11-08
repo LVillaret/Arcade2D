@@ -6,8 +6,12 @@ public class MoveState : State {
     public override void OnUpdate() {
         base.OnUpdate();
         
+        
         PlayerController.transform.Translate(InputController.Move * 
                                               (Time.deltaTime * PlayerController.Speed));
         
+        PlayerController._animator.SetFloat("IsWalking", InputController.Move.magnitude);
+
     }
+    
 }

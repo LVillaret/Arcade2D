@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Searcher;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -13,14 +14,19 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private PolygonCollider2D _hurtBox;
     [SerializeField] private List<GameplayAction> _actions;
     [SerializeField] private GameplayAction _nextAction;
-    
+
+    private float _lastPositionX;
+    private Vector2 _direction;
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private State _currentState;
     private InputController _inputController;
     private Sprite _lastSprite;
+    
     private readonly List<Vector2> _points = new();
     
+    
+    public Animator _animator;
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public float Speed => _speed;
@@ -51,9 +57,12 @@ public class PlayerController : MonoBehaviour {
 
     private void Start() {
         _nextAction = _actions.First();
+        
     }
 
     private void Update() {
+        
+        Flip();
         _currentState.OnUpdate();
         
         // Transitions
@@ -82,6 +91,17 @@ public class PlayerController : MonoBehaviour {
         if (_currentState is AttackState { IsFinished: true }) {
             SwitchState(new MoveState(gameObject));
         }
+
+        if (_currentState is MoveState && _inputController.IsHeavyAttacking.Value)
+        {
+            SwitchState(new HeavyAttackState(gameObject, _nextAction.Speed));
+        }
+        if (_currentState is HeavyAttackState { IsFinished: true })
+        {
+            SwitchState(new MoveState(gameObject));
+        }
+        
+        
     }
     
     private void SwitchState(State state) {
@@ -123,6 +143,17 @@ public class PlayerController : MonoBehaviour {
                     _points[p] = new Vector2(-_points[p].x, _points[p].y);
 
             _hurtBox.SetPath(i, _points);
+        }
+    }
+    
+    private void Flip() {
+        if (_inputController.Move.x < 0)
+        {
+            _spriteRenderer.flipX = true;
+        }
+        else if (_inputController.Move.x > 0)
+        {
+            _spriteRenderer.flipX = false;
         }
     }
 }

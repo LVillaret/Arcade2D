@@ -8,13 +8,7 @@ public class LandState : State{
         base.OnEnter();
         Animator.SetBool("IsFalling", true);
     }
-
-    public override void OnUpdate() {
-        base.OnUpdate();
-        
-        float velocity = InputController.Move.x * (PlayerController.AirControl * Time.deltaTime);
-        PlayerController.Rigidbody2D.linearVelocity = new Vector2(velocity, PlayerController.Rigidbody2D.linearVelocity.y);
-    }
+    
 
     public override void OnExit() {
         base.OnExit();
