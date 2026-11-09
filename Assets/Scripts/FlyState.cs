@@ -8,7 +8,6 @@ public class FlyState : State
     public override void OnEnter() {
         base.OnEnter();
         
-        //Animator.SetBool("IsFlying", true);
     }
 
     public override void OnUpdate() {
@@ -21,7 +20,5 @@ public class FlyState : State
     public override void OnExit() {
         base.OnExit();
         
-        Animator.SetBool("IsJumping", false);
-        //Animator.SetBool("IsFlying", false);
     }
 }

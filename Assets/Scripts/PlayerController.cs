@@ -68,11 +68,13 @@ public class PlayerController : MonoBehaviour {
         // Transitions
         if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
             SwitchState(new JumpState(gameObject));
+            return;
         }
 
         if (_currentState is JumpState && Rigidbody2D.linearVelocityY > 0  )
         {
             SwitchState(new FlyState(gameObject));
+            return;
         }
         
         if(_currentState is FlyState && IsGrounded)
@@ -80,28 +82,32 @@ public class PlayerController : MonoBehaviour {
            SwitchState(new LandState(gameObject));
         }
          
-        if (_currentState is LandState && !_inputController.IsJumping && IsGrounded) {
+        if (_currentState is LandState) {
             SwitchState(new MoveState(gameObject));
+            
         }
 
         if (_currentState is MoveState && _inputController.IsAttacking.Value) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
+            return;
         }
 
         if (_currentState is AttackState { IsFinished: true }) {
             SwitchState(new MoveState(gameObject));
+            return;
         }
 
         if (_currentState is MoveState && _inputController.IsHeavyAttacking.Value)
         {
             SwitchState(new HeavyAttackState(gameObject, _nextAction.Speed));
+            return;
         }
+        
         if (_currentState is HeavyAttackState { IsFinished: true })
         {
             SwitchState(new MoveState(gameObject));
+            return;
         }
-        
-        
     }
     
     private void SwitchState(State state) {

@@ -10,7 +10,7 @@ public class MoveState : State {
         PlayerController.transform.Translate(InputController.Move * 
                                               (Time.deltaTime * PlayerController.Speed));
         
-        PlayerController._animator.SetFloat("IsWalking", InputController.Move.magnitude);
+        PlayerController._animator.SetFloat("Walking", InputController.Move.magnitude);
 
     }
     
