@@ -13,7 +13,6 @@ public class AttackState : State
         
         InputController.IsAttacking.Stop();
         Animator.runtimeAnimatorController = _currentAction.animatorOverrideController;
-        Animator.speed = 1 / Duration;
         Animator.SetBool("IsAttacking", true);
         // PlayerController.Invoke(nameof(Untint), 0.2f);
 
@@ -27,7 +26,6 @@ public class AttackState : State
         int index = PlayerController.Attacks.IndexOf(PlayerController.NextAction) +1;
         if (index >= PlayerController.Attacks.Count) index = 0;
         PlayerController.NextAction = PlayerController.Attacks[index];
-        Animator.speed = 1;
         Animator.SetBool("IsAttacking", false);
     }
     

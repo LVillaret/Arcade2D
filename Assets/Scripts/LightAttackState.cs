@@ -13,7 +13,6 @@ public class LightAttackState : State
         
         InputController.IsLightAttacking.Stop();
         Animator.runtimeAnimatorController = _currentAction.animatorOverrideController;
-        Animator.speed = 1 / Duration;
         Animator.SetBool("IsLightAttacking", true);
         // PlayerController.Invoke(nameof(Untint), 0.2f);
     }
@@ -24,7 +23,6 @@ public class LightAttackState : State
         int index = PlayerController.LightAttacks.IndexOf(PlayerController.NextAction) +1;
         if (index >= PlayerController.LightAttacks.Count) index = 0;
         PlayerController.NextAction = PlayerController.LightAttacks[index];
-        Animator.speed = 1;
         Animator.SetBool("IsLightAttacking", false);
     }
 
