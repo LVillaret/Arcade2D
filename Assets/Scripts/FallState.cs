@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 
-public class FlyState : State
+public class FallState : State
 {
-    public FlyState(GameObject host, float duration = -1) : base(host, duration) { }
+    public FallState(GameObject host, float duration = -1) : base(host, duration) { }
 
 
     public override void OnEnter() {
         base.OnEnter();
         
+        Animator.SetBool("IsFalling", true);
     }
 
     public override void OnUpdate() {
@@ -20,5 +21,6 @@ public class FlyState : State
     public override void OnExit() {
         base.OnExit();
         
+        Animator.SetBool("IsFalling", false);
     }
 }

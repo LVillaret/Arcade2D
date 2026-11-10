@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f70cadea0d8d4e96be716d123b3da64d, type: 3}
-  m_Name: AttackLight1
+  m_Name: LightAttack3
   m_EditorClassIdentifier: Assembly-CSharp::GameplayAction
-  animatorOverrideController: {fileID: 22100000, guid: 0388716a84513cc4c9a5e6cc6094eadc, type: 2}
-  Clip: {fileID: 7400000, guid: 8324f91c87b617843b645bf308a08031, type: 2}
-  Damage: 5
+  animatorOverrideController: {fileID: 22100000, guid: e5494c7511608c44f914d6c01697898a, type: 2}
+  Clip: {fileID: 7400000, guid: 859046a3f7dc861409804278046614a4, type: 2}
+  Damage: 3
   Speed: 0.5

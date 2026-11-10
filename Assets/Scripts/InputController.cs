@@ -7,11 +7,11 @@ public class InputController : MonoBehaviour {
         public Vector2 Move;
         public bool IsJumping;
         public Trigger IsAttacking;
-        public Trigger IsHeavyAttacking;
+        public Trigger IsLightAttacking;
+        public bool IsBlocking;   
 
         public void OnMove(InputValue value) {
                 Move = value.Get<Vector2>();
-                
         }
 
         public void OnJump(InputValue value) {
@@ -22,7 +22,11 @@ public class InputController : MonoBehaviour {
                 if (value.isPressed) IsAttacking.Launch();
         }
         
-        public void OnHeavyAttack(InputValue value) {
-                if (value.isPressed) IsHeavyAttacking.Launch();
+        public void OnLightAttack(InputValue value) {
+                if (value.isPressed) IsLightAttacking.Launch();
+        }
+
+        public void OnBlock(InputValue value) {
+                 IsBlocking = value.isPressed;
         }
 }

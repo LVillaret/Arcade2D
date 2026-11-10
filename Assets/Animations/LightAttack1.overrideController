@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightAttack1
+  m_Controller: {fileID: 9100000, guid: 35f70b73e5174ae4a8e6f35be6d9929f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c7053fad0ff10a544b460a34b59bf9d0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c7053fad0ff10a544b460a34b59bf9d0, type: 2}

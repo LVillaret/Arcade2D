@@ -23,11 +23,10 @@ public class AttackState : State
 
     public override void OnExit() {
         base.OnExit();
-
         
-        int index = PlayerController.Actions.IndexOf(PlayerController.NextAction) +1;
-        if (index >= PlayerController.Actions.Count) index = 0;
-        PlayerController.NextAction = PlayerController.Actions[index];
+        int index = PlayerController.Attacks.IndexOf(PlayerController.NextAction) +1;
+        if (index >= PlayerController.Attacks.Count) index = 0;
+        PlayerController.NextAction = PlayerController.Attacks[index];
         Animator.speed = 1;
         Animator.SetBool("IsAttacking", false);
     }

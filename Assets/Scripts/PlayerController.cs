@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float _groundCheckDistance;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private PolygonCollider2D _hurtBox;
-    [SerializeField] private List<GameplayAction> _actions;
+    [SerializeField] private List<GameplayAction> _attacks;
+    [SerializeField] private List<GameplayAction> _lightAttacks;
     [SerializeField] private GameplayAction _nextAction;
+    
 
     private float _lastPositionX;
     private Vector2 _direction;
@@ -27,12 +29,14 @@ public class PlayerController : MonoBehaviour {
     
     
     public Animator _animator;
+    public GameObject _shield;
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public float Speed => _speed;
     public float JumpForce => _jumpForce;
     public float AirControl => _airControl;
-    public List<GameplayAction>Actions => _actions;
+    public List<GameplayAction>Attacks => _attacks;
+    public List<GameplayAction> LightAttacks => _lightAttacks;
     public bool IsGrounded {
         get {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, _groundCheckDistance, _groundLayer);
@@ -56,37 +60,18 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Start() {
-        _nextAction = _actions.First();
-        
+        _nextAction = _attacks.First();
+        _nextAction = _lightAttacks.First();
     }
 
     private void Update() {
         
         Flip();
+        
         _currentState.OnUpdate();
         
-        // Transitions
-        if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
-            SwitchState(new JumpState(gameObject));
-            return;
-        }
-
-        if (_currentState is JumpState && Rigidbody2D.linearVelocityY > 0  )
-        {
-            SwitchState(new FlyState(gameObject));
-            return;
-        }
         
-        if(_currentState is FlyState && IsGrounded)
-        { 
-           SwitchState(new LandState(gameObject));
-        }
-         
-        if (_currentState is LandState) {
-            SwitchState(new MoveState(gameObject));
-            
-        }
-
+        // Transitions Attack
         if (_currentState is MoveState && _inputController.IsAttacking.Value) {
             SwitchState(new AttackState(gameObject, _nextAction.Speed));
             return;
@@ -97,16 +82,51 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        if (_currentState is MoveState && _inputController.IsHeavyAttacking.Value)
+        if (_currentState is MoveState && _inputController.IsLightAttacking.Value)
         {
-            SwitchState(new HeavyAttackState(gameObject, _nextAction.Speed));
+            SwitchState(new LightAttackState(gameObject, _nextAction.Speed));
             return;
         }
         
-        if (_currentState is HeavyAttackState { IsFinished: true })
+        if (_currentState is LightAttackState { IsFinished: true })
         {
             SwitchState(new MoveState(gameObject));
             return;
+        }
+
+        if (_currentState is MoveState && _inputController.IsBlocking && IsGrounded)
+        {
+            SwitchState(new BlockState(gameObject));
+        }
+
+        if (_currentState is BlockState && !_inputController.IsBlocking)
+        {
+            SwitchState(new MoveState(gameObject));
+        }
+        //Transition Jump
+        if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
+            SwitchState(new JumpState(gameObject));
+            return;
+        }
+
+        if (_currentState is JumpState && Rigidbody2D.linearVelocityY > 0  )
+        {
+            SwitchState(new JumpUpState(gameObject));
+            return;
+        }
+        
+        if(_currentState is JumpUpState && Rigidbody2D.linearVelocityY < 0)
+        { 
+           SwitchState(new FallState(gameObject));
+        }
+         
+        if (_currentState is FallState && !_inputController.IsJumping && IsGrounded) {
+            SwitchState(new LandState(gameObject, 0.2f));
+        }
+
+        if (_currentState is LandState {IsFinished: true})
+        {
+            SwitchState(new MoveState(gameObject));
         }
     }
     
@@ -116,6 +136,11 @@ public class PlayerController : MonoBehaviour {
         _currentState = state;
         _currentState?.OnEnter();
         Debug.Log($"Entering State : {_currentState?.GetType().Name}");
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (!other.CompareTag("HurtBox")) return;
     }
 
     private bool _hurtBoxActive;
