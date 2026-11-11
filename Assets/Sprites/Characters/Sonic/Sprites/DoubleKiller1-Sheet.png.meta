@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 3e448faab01695a44bf2db4853a2b69a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6874199686915609684
+    second: DoubleKiller1-Sheet_0
+  - first:
+      213: 2221522753309360155
+    second: DoubleKiller1-Sheet_1
+  - first:
+      213: 6003810066547131238
+    second: DoubleKiller1-Sheet_2
+  - first:
+      213: 8847507157063153981
+    second: DoubleKiller1-Sheet_3
+  - first:
+      213: -5988060161494610588
+    second: DoubleKiller1-Sheet_4
+  - first:
+      213: -8022236077508061743
+    second: DoubleKiller1-Sheet_5
+  - first:
+      213: 7088088015491843094
+    second: DoubleKiller1-Sheet_6
+  - first:
+      213: -3210242401055629643
+    second: DoubleKiller1-Sheet_7
+  - first:
+      213: -7836961233869125640
+    second: DoubleKiller1-Sheet_8
+  - first:
+      213: 6145453351426514121
+    second: DoubleKiller1-Sheet_9
+  - first:
+      213: 7375753899010228457
+    second: DoubleKiller1-Sheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 46
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454d4b5b130166f50800000000000000
+      internalID: 6874199686915609684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 46
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10c37b8c2f64de10800000000000000
+      internalID: 2221522753309360155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 45
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663c47b2271d15350800000000000000
+      internalID: 6003810066547131238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 43
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39b97c12e8a8ca70800000000000000
+      internalID: 8847507157063153981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 41
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d027c520326eca0800000000000000
+      internalID: -5988060161494610588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 41
+        width: 66
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d51fc78aca4ba090800000000000000
+      internalID: -8022236077508061743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 79
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614481cee72fd5260800000000000000
+      internalID: 7088088015491843094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 40
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be9e2a7b8de273d0800000000000000
+      internalID: -3210242401055629643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 41
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f749b0a7458d3390800000000000000
+      internalID: -7836961233869125640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 40
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccd28b5349094550800000000000000
+      internalID: 6145453351426514121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleKiller1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 40
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0053db711fb5660800000000000000
+      internalID: 7375753899010228457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DoubleKiller1-Sheet_0: 6874199686915609684
+      DoubleKiller1-Sheet_1: 2221522753309360155
+      DoubleKiller1-Sheet_10: 7375753899010228457
+      DoubleKiller1-Sheet_2: 6003810066547131238
+      DoubleKiller1-Sheet_3: 8847507157063153981
+      DoubleKiller1-Sheet_4: -5988060161494610588
+      DoubleKiller1-Sheet_5: -8022236077508061743
+      DoubleKiller1-Sheet_6: 7088088015491843094
+      DoubleKiller1-Sheet_7: -3210242401055629643
+      DoubleKiller1-Sheet_8: -7836961233869125640
+      DoubleKiller1-Sheet_9: 6145453351426514121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

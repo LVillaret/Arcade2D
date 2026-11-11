@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 281ec224d4cd56f4984dbf1fed58bd42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3530870504940154181
+    second: I Eat Your Heart1-Sheet_0
+  - first:
+      213: 2038328592324907831
+    second: I Eat Your Heart1-Sheet_1
+  - first:
+      213: 8130312993364961501
+    second: I Eat Your Heart1-Sheet_2
+  - first:
+      213: -3025470882234099801
+    second: I Eat Your Heart1-Sheet_3
+  - first:
+      213: 8082178110613393268
+    second: I Eat Your Heart1-Sheet_4
+  - first:
+      213: -7384375098053982778
+    second: I Eat Your Heart1-Sheet_5
+  - first:
+      213: -2089813237495596687
+    second: I Eat Your Heart1-Sheet_6
+  - first:
+      213: 3374840682610261931
+    second: I Eat Your Heart1-Sheet_7
+  - first:
+      213: -249534267950980308
+    second: I Eat Your Heart1-Sheet_8
+  - first:
+      213: -8848306543555160804
+    second: I Eat Your Heart1-Sheet_9
+  - first:
+      213: -4752187641067475648
+    second: I Eat Your Heart1-Sheet_10
+  - first:
+      213: -7236448902762364019
+    second: I Eat Your Heart1-Sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 46
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2532dabf3dffec0800000000000000
+      internalID: -3530870504940154181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 45
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7335c012e09994c10800000000000000
+      internalID: 2038328592324907831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 45
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8e24a579ca4d070800000000000000
+      internalID: 8130312993364961501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 45
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a71622234e5306d0800000000000000
+      internalID: -3025470882234099801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 45
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f8c8e9b2aa92070800000000000000
+      internalID: 8082178110613393268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 44
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c58040f8fd658990800000000000000
+      internalID: -7384375098053982778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 45
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1797a2cceed7ff2e0800000000000000
+      internalID: -2089813237495596687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 45
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf758c58b7d5de20800000000000000
+      internalID: 3374840682610261931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 84
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23ae77c7e9798cf0800000000000000
+      internalID: -249534267950980308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 41
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1551a73410843580800000000000000
+      internalID: -8848306543555160804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 44
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04deb24c486dc0eb0800000000000000
+      internalID: -4752187641067475648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I Eat Your Heart1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 46
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8385933018f29b90800000000000000
+      internalID: -7236448902762364019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      I Eat Your Heart1-Sheet_0: -3530870504940154181
+      I Eat Your Heart1-Sheet_1: 2038328592324907831
+      I Eat Your Heart1-Sheet_10: -4752187641067475648
+      I Eat Your Heart1-Sheet_11: -7236448902762364019
+      I Eat Your Heart1-Sheet_2: 8130312993364961501
+      I Eat Your Heart1-Sheet_3: -3025470882234099801
+      I Eat Your Heart1-Sheet_4: 8082178110613393268
+      I Eat Your Heart1-Sheet_5: -7384375098053982778
+      I Eat Your Heart1-Sheet_6: -2089813237495596687
+      I Eat Your Heart1-Sheet_7: 3374840682610261931
+      I Eat Your Heart1-Sheet_8: -249534267950980308
+      I Eat Your Heart1-Sheet_9: -8848306543555160804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

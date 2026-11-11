@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 828f039b21d96494b8c32e90f3675b30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4102109399446794980
+    second: Clone combo_0
+  - first:
+      213: 8747287746120110814
+    second: Clone combo_1
+  - first:
+      213: 6659005776858562378
+    second: Clone combo_2
+  - first:
+      213: -4564526693822492407
+    second: Clone combo_3
+  - first:
+      213: 5738730728851559565
+    second: Clone combo_4
+  - first:
+      213: -2003857920621165217
+    second: Clone combo_5
+  - first:
+      213: -6495847893645713678
+    second: Clone combo_6
+  - first:
+      213: -4016958625290976946
+    second: Clone combo_7
+  - first:
+      213: 8998013789201536425
+    second: Clone combo_8
+  - first:
+      213: -929438704033751037
+    second: Clone combo_9
+  - first:
+      213: -4208237364102493161
+    second: Clone combo_10
+  - first:
+      213: -596445610077079811
+    second: Clone combo_11
+  - first:
+      213: 5990897211357231263
+    second: Clone combo_12
+  - first:
+      213: 3846454822867112384
+    second: Clone combo_13
+  - first:
+      213: 1128304827698289819
+    second: Clone combo_14
+  - first:
+      213: -7634298009719733459
+    second: Clone combo_15
+  - first:
+      213: 5358298979651989333
+    second: Clone combo_16
+  - first:
+      213: -1622137642281988795
+    second: Clone combo_17
+  - first:
+      213: -8474383005124985329
+    second: Clone combo_18
+  - first:
+      213: 2163618059192757096
+    second: Clone combo_19
+  - first:
+      213: -3935254347509132815
+    second: Clone combo_20
+  - first:
+      213: -8604167713376879264
+    second: Clone combo_21
+  - first:
+      213: 7276335441581357974
+    second: Clone combo_22
+  - first:
+      213: -7940223118499098633
+    second: Clone combo_23
+  - first:
+      213: 5621727413623114782
+    second: Clone combo_24
+  - first:
+      213: -5086679686566258050
+    second: Clone combo_25
+  - first:
+      213: -7434984580724491098
+    second: Clone combo_26
+  - first:
+      213: 5374325349960949281
+    second: Clone combo_27
+  - first:
+      213: -8884165765680447590
+    second: Clone combo_28
+  - first:
+      213: 8146061874625682160
+    second: Clone combo_29
+  - first:
+      213: 6849135404969752810
+    second: Clone combo_30
+  - first:
+      213: -8640167529973192400
+    second: Clone combo_31
+  - first:
+      213: 3403916754475108049
+    second: Clone combo_32
+  - first:
+      213: 1316617821614219795
+    second: Clone combo_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clone combo_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 286
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e231dfc3ce9de830800000000000000
+      internalID: 4102109399446794980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 276
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2dd972cdb946970800000000000000
+      internalID: 8747287746120110814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 252
+        width: 95
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fbdee197a896c50800000000000000
+      internalID: 6659005776858562378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 174
+        width: 199
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9011ce6e72b87a0c0800000000000000
+      internalID: -4564526693822492407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_4
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 251
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84d0da513114af40800000000000000
+      internalID: 5738730728851559565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_5
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 220
+        width: 134
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55c50d86ddd034e0800000000000000
+      internalID: -2003857920621165217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_6
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 227
+        width: 146
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe1748d1cc1ad5a0800000000000000
+      internalID: -6495847893645713678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_7
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 284
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41071eb965e048c0800000000000000
+      internalID: -4016958625290976946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_8
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 230
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a59c652edd5fdc70800000000000000
+      internalID: 8998013789201536425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_9
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 286
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300a19d4c68f913f0800000000000000
+      internalID: -929438704033751037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_10
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 227
+        width: 88
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c052ed9665995c0800000000000000
+      internalID: -4208237364102493161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_11
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 284
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6b383b0eff8b7f0800000000000000
+      internalID: -596445610077079811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_12
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 233
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9873d8c541f32350800000000000000
+      internalID: 5990897211357231263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_13
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 194
+        width: 83
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c11591384a516530800000000000000
+      internalID: 3846454822867112384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_14
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 280
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c9055434b88af00800000000000000
+      internalID: 1128304827698289819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_15
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 241
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d230f2d88668d0690800000000000000
+      internalID: -7634298009719733459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_16
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 239
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fae7258808c5a40800000000000000
+      internalID: 5358298979651989333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_17
+      rect:
+        serializedVersion: 2
+        x: 2770
+        y: 195
+        width: 82
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d0ef6a8620d79e0800000000000000
+      internalID: -1622137642281988795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_18
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 229
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0efae85e81f46a80800000000000000
+      internalID: -8474383005124985329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_19
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 227
+        width: 73
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bedc75927b60e10800000000000000
+      internalID: 2163618059192757096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_20
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 242
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f118e3550b2369c0800000000000000
+      internalID: -3935254347509132815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_21
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 229
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d39403d0bd79880800000000000000
+      internalID: -8604167713376879264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_22
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 227
+        width: 72
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bba0e488cbaf460800000000000000
+      internalID: 7276335441581357974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_23
+      rect:
+        serializedVersion: 2
+        x: 4196
+        y: 218
+        width: 130
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff44809429aec190800000000000000
+      internalID: -7940223118499098633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_24
+      rect:
+        serializedVersion: 2
+        x: 4696
+        y: 216
+        width: 291
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cc4192c43640e40800000000000000
+      internalID: 5621727413623114782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 274
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ad50486cb7869b0800000000000000
+      internalID: -5086679686566258050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 230
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acf8638ae0a1d890800000000000000
+      internalID: -7434984580724491098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_27
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 230
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e9ccf6e60759a40800000000000000
+      internalID: 5374325349960949281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_28
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 230
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f3ee27e4a15b480800000000000000
+      internalID: -8884165765680447590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_29
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 230
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa9a638d10ac0170800000000000000
+      internalID: 8146061874625682160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_30
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 255
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8f5cfcc540d0f50800000000000000
+      internalID: 6849135404969752810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_31
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 230
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0396518b865f71880800000000000000
+      internalID: -8640167529973192400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_32
+      rect:
+        serializedVersion: 2
+        x: 2857
+        y: 247
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d64d73e0442d3f20800000000000000
+      internalID: 3403916754475108049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clone combo_33
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 251
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312a34adee0954210800000000000000
+      internalID: 1316617821614219795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Clone combo_0: 4102109399446794980
+      Clone combo_1: 8747287746120110814
+      Clone combo_10: -4208237364102493161
+      Clone combo_11: -596445610077079811
+      Clone combo_12: 5990897211357231263
+      Clone combo_13: 3846454822867112384
+      Clone combo_14: 1128304827698289819
+      Clone combo_15: -7634298009719733459
+      Clone combo_16: 5358298979651989333
+      Clone combo_17: -1622137642281988795
+      Clone combo_18: -8474383005124985329
+      Clone combo_19: 2163618059192757096
+      Clone combo_2: 6659005776858562378
+      Clone combo_20: -3935254347509132815
+      Clone combo_21: -8604167713376879264
+      Clone combo_22: 7276335441581357974
+      Clone combo_23: -7940223118499098633
+      Clone combo_24: 5621727413623114782
+      Clone combo_25: -5086679686566258050
+      Clone combo_26: -7434984580724491098
+      Clone combo_27: 5374325349960949281
+      Clone combo_28: -8884165765680447590
+      Clone combo_29: 8146061874625682160
+      Clone combo_3: -4564526693822492407
+      Clone combo_30: 6849135404969752810
+      Clone combo_31: -8640167529973192400
+      Clone combo_32: 3403916754475108049
+      Clone combo_33: 1316617821614219795
+      Clone combo_4: 5738730728851559565
+      Clone combo_5: -2003857920621165217
+      Clone combo_6: -6495847893645713678
+      Clone combo_7: -4016958625290976946
+      Clone combo_8: 8998013789201536425
+      Clone combo_9: -929438704033751037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

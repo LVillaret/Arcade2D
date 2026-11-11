@@ -10,15 +10,23 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float _airControl;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _groundCheckDistance;
+    [SerializeField] private float _knockbackHorizontalForce;
+    [SerializeField] private float _knockbackVerticalForce;
+    [SerializeField] private float _comboResetTime;
+    
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private PolygonCollider2D _hurtBox;
     [SerializeField] private List<GameplayAction> _attacks;
     [SerializeField] private List<GameplayAction> _lightAttacks;
     [SerializeField] private GameplayAction _nextAction;
     
-
+    
     private float _lastPositionX;
+    private int _receivedHitCount = 0;
+    private float _lastHitTime = -1f;
+    
     private Vector2 _direction;
+    private Vector2 _knockbackDirection;
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private State _currentState;
@@ -27,14 +35,18 @@ public class PlayerController : MonoBehaviour {
     
     private readonly List<Vector2> _points = new();
     
+    public bool IsBeingKnockedBack { get; set; }
     
     public Animator _animator;
     public GameObject _shield;
+    
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public float Speed => _speed;
     public float JumpForce => _jumpForce;
     public float AirControl => _airControl;
+    public float KnockbackForce => _knockbackHorizontalForce;
+    public float KnockbackVerticalForce => _knockbackVerticalForce;
     public List<GameplayAction>Attacks => _attacks;
     public List<GameplayAction> LightAttacks => _lightAttacks;
     public bool IsGrounded {
@@ -103,6 +115,44 @@ public class PlayerController : MonoBehaviour {
         {
             SwitchState(new MoveState(gameObject));
         }
+        
+        //Hit & Knockback transition
+        
+        if (_currentState is HitState {IsFinished: true , CausesKnockback: true})
+        {
+            SwitchState(new KnockUpState(gameObject));
+        }
+
+        if (_currentState is HitState { IsFinished: true, CausesKnockback: false })
+        {
+            SwitchState(new KnockUpState(gameObject));
+        }
+
+        if (_currentState is KnockUpState && Rigidbody2D.linearVelocity.y <=0 )
+        {
+            SwitchState(new KnockUpDownState(gameObject));
+        }
+
+        if (_currentState is KnockUpDownState && Rigidbody2D.linearVelocity.y < 0)
+        {
+            SwitchState(new KnockFallState(gameObject));
+        }
+
+        if (_currentState is KnockFallState && IsGrounded)
+        {
+            SwitchState(new KnockDownState(gameObject));
+        }
+
+        if (_currentState is KnockDownState { IsFinished: true })
+        {
+            SwitchState(new GetUpState(gameObject));
+        }
+
+        if (_currentState is GetUpState { IsFinished: true })
+        {
+            SwitchState(new MoveState(gameObject));
+        }
+
         //Transition Jump
         if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
             SwitchState(new JumpState(gameObject));
@@ -140,7 +190,29 @@ public class PlayerController : MonoBehaviour {
 
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (!other.CompareTag("HurtBox")) return;
+        if (other.CompareTag("HurtBox"))
+        {
+            bool causesKnockback = RegisterHit();
+            
+           SwitchState(new HitState(gameObject, 0.5f, causesKnockback)); 
+            // if (|| _currentState is DeadState) return;
+        }
+    }
+
+    public bool RegisterHit() {
+        if (_lastHitTime < 0f || Time.time - _lastHitTime > _comboResetTime)
+        {
+            _receivedHitCount = 0;
+        }
+        _lastHitTime = Time.time;
+        _receivedHitCount++;
+
+        if (_receivedHitCount >= 3)
+        {
+            _receivedHitCount = 0;
+            return true;
+        }
+        return false;
     }
 
     private bool _hurtBoxActive;

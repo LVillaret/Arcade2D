@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 839908af108aa7945ab61a921ead305f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 993098928118857718
+    second: FireFromHell2_0
+  - first:
+      213: -6769399042793999315
+    second: FireFromHell2_1
+  - first:
+      213: 339269557160586972
+    second: FireFromHell2_2
+  - first:
+      213: -6486943340720525649
+    second: FireFromHell2_3
+  - first:
+      213: -7611848978049312484
+    second: FireFromHell2_4
+  - first:
+      213: 4453606015592688419
+    second: FireFromHell2_5
+  - first:
+      213: -7311828456891314675
+    second: FireFromHell2_6
+  - first:
+      213: -3520506858668343778
+    second: FireFromHell2_7
+  - first:
+      213: 1748806276974582399
+    second: FireFromHell2_8
+  - first:
+      213: 6445312579919257286
+    second: FireFromHell2_9
+  - first:
+      213: 8057213301725005389
+    second: FireFromHell2_10
+  - first:
+      213: 4394762768635638632
+    second: FireFromHell2_11
+  - first:
+      213: -1178367514376613945
+    second: FireFromHell2_12
+  - first:
+      213: -2517074603275710160
+    second: FireFromHell2_13
+  - first:
+      213: -2516220625865416177
+    second: FireFromHell2_14
+  - first:
+      213: 5377507094496144758
+    second: FireFromHell2_15
+  - first:
+      213: -7882938398675979774
+    second: FireFromHell2_16
+  - first:
+      213: -7468522136337881021
+    second: FireFromHell2_17
+  - first:
+      213: 2203187490022331969
+    second: FireFromHell2_18
+  - first:
+      213: -2693769215008539511
+    second: FireFromHell2_19
+  - first:
+      213: -614584974148303464
+    second: FireFromHell2_20
+  - first:
+      213: -6635125137234254559
+    second: FireFromHell2_21
+  - first:
+      213: -8588153554721502732
+    second: FireFromHell2_22
+  - first:
+      213: -8000455214135901218
+    second: FireFromHell2_23
+  - first:
+      213: 2786536237514767888
+    second: FireFromHell2_24
+  - first:
+      213: 1838425498333400150
+    second: FireFromHell2_25
+  - first:
+      213: 8428587739495749731
+    second: FireFromHell2_26
+  - first:
+      213: -3825920978934949057
+    second: FireFromHell2_27
+  - first:
+      213: 1523620132827830886
+    second: FireFromHell2_28
+  - first:
+      213: -2446322752945051962
+    second: FireFromHell2_29
+  - first:
+      213: 8064404140045427209
+    second: FireFromHell2_30
+  - first:
+      213: -850932070530419803
+    second: FireFromHell2_31
+  - first:
+      213: -6444398569568711969
+    second: FireFromHell2_32
+  - first:
+      213: 2524750264481083669
+    second: FireFromHell2_33
+  - first:
+      213: -4793702013564505049
+    second: FireFromHell2_34
+  - first:
+      213: -4460775420530204995
+    second: FireFromHell2_35
+  - first:
+      213: -8896797266156021747
+    second: FireFromHell2_36
+  - first:
+      213: 778910863291019536
+    second: FireFromHell2_37
+  - first:
+      213: -5536763401737429248
+    second: FireFromHell2_38
+  - first:
+      213: -1588999612331112433
+    second: FireFromHell2_39
+  - first:
+      213: -5740591540483935574
+    second: FireFromHell2_40
+  - first:
+      213: -4748217747935000323
+    second: FireFromHell2_41
+  - first:
+      213: 66684968247931237
+    second: FireFromHell2_42
+  - first:
+      213: -3856639785892078637
+    second: FireFromHell2_43
+  - first:
+      213: 8452098251588137708
+    second: FireFromHell2_44
+  - first:
+      213: -42255811694652267
+    second: FireFromHell2_45
+  - first:
+      213: -971493688492971752
+    second: FireFromHell2_46
+  - first:
+      213: 2832589930065552188
+    second: FireFromHell2_47
+  - first:
+      213: -8814260518919875708
+    second: FireFromHell2_48
+  - first:
+      213: 5326016860634916634
+    second: FireFromHell2_49
+  - first:
+      213: 1747526886532196244
+    second: FireFromHell2_50
+  - first:
+      213: -7491835731547643858
+    second: FireFromHell2_51
+  - first:
+      213: 6862667661123868176
+    second: FireFromHell2_52
+  - first:
+      213: -5003427776888549271
+    second: FireFromHell2_53
+  - first:
+      213: -2786256754338360080
+    second: FireFromHell2_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireFromHell2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff7855a63238cd00800000000000000
+      internalID: 993098928118857718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24f467bf634e02a0800000000000000
+      internalID: -6769399042793999315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde29ad5dd355b400800000000000000
+      internalID: 339269557160586972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae6442a66fb9f5a0800000000000000
+      internalID: -6486943340720525649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19537b0fa74d5690800000000000000
+      internalID: -7611848978049312484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32be1f033136ecd30800000000000000
+      internalID: 4453606015592688419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e866812ca278a90800000000000000
+      internalID: -7311828456891314675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e3fbb1aa5a42fc0800000000000000
+      internalID: -3520506858668343778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a1b081b02054810800000000000000
+      internalID: 1748806276974582399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce917884a9527950800000000000000
+      internalID: 6445312579919257286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d460fd81fc8f0df60800000000000000
+      internalID: 8057213301725005389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863b3a024755dfc30800000000000000
+      internalID: 4394762768635638632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfc8ba2df895afe0800000000000000
+      internalID: -1178367514376613945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031189efbfd811dd0800000000000000
+      internalID: -2517074603275710160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02e7ca1ca6941dd0800000000000000
+      internalID: -2516220625865416177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67de590163eb0aa40800000000000000
+      internalID: 5377507094496144758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202b1a0ca4d2a9290800000000000000
+      internalID: -7882938398675979774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348607adfaa7a5890800000000000000
+      internalID: -7468522136337881021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1469d54695b439e10800000000000000
+      internalID: 2203187490022331969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c7880db2fcd9ad0800000000000000
+      internalID: -2693769215008539511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireFromHell2_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8950993e83e8877f0800000000000000
+      internalID: -614584974148303464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e537a5f6f5924984a8c668620773ff9e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      FireFromHell2_0: 993098928118857718
+      FireFromHell2_1: -6769399042793999315
+      FireFromHell2_10: 8057213301725005389
+      FireFromHell2_11: 4394762768635638632
+      FireFromHell2_12: -1178367514376613945
+      FireFromHell2_13: -2517074603275710160
+      FireFromHell2_14: -2516220625865416177
+      FireFromHell2_15: 5377507094496144758
+      FireFromHell2_16: -7882938398675979774
+      FireFromHell2_17: -7468522136337881021
+      FireFromHell2_18: 2203187490022331969
+      FireFromHell2_19: -2693769215008539511
+      FireFromHell2_2: 339269557160586972
+      FireFromHell2_20: -614584974148303464
+      FireFromHell2_3: -6486943340720525649
+      FireFromHell2_4: -7611848978049312484
+      FireFromHell2_5: 4453606015592688419
+      FireFromHell2_6: -7311828456891314675
+      FireFromHell2_7: -3520506858668343778
+      FireFromHell2_8: 1748806276974582399
+      FireFromHell2_9: 6445312579919257286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

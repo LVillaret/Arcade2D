@@ -18,7 +18,7 @@ public abstract class State {
 
     public virtual void OnEnter() {
         _timer = Duration;
-        if(Duration > 0f) Animator.speed = 1 / Duration;
+        //if(Duration > 0f) Animator.speed = 1 / Duration;
         
     }
 

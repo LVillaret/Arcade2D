@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 1bbbc68906395cd44848b379fe62840c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2557561879060456266
+    second: knockaut1-Sheet_0
+  - first:
+      213: -1640058145658930695
+    second: knockaut1-Sheet_1
+  - first:
+      213: 8373410908326949369
+    second: knockaut1-Sheet_2
+  - first:
+      213: -7250939681854261198
+    second: knockaut1-Sheet_3
+  - first:
+      213: -910845344306233287
+    second: knockaut1-Sheet_4
+  - first:
+      213: 472792374149052370
+    second: knockaut1-Sheet_5
+  - first:
+      213: -5778896677925276409
+    second: knockaut1-Sheet_6
+  - first:
+      213: 813970302345898289
+    second: knockaut1-Sheet_7
+  - first:
+      213: 323150533849314233
+    second: knockaut1-Sheet_8
+  - first:
+      213: -5977642541518617483
+    second: knockaut1-Sheet_9
+  - first:
+      213: -2284947901662853596
+    second: knockaut1-Sheet_10
+  - first:
+      213: -5079462555753118813
+    second: knockaut1-Sheet_11
+  - first:
+      213: 5447085827952634485
+    second: knockaut1-Sheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knockaut1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 45
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43aa7c7af84e7320800000000000000
+      internalID: 2557561879060456266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 45
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f973015ec75d39e0800000000000000
+      internalID: -1640058145658930695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 45
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1753d5bd4543470800000000000000
+      internalID: 8373410908326949369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 45
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238fa47c6cc7f5b90800000000000000
+      internalID: -7250939681854261198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 46
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9300f473cf60c53f0800000000000000
+      internalID: -910845344306233287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 46
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7faa9c822bf8600800000000000000
+      internalID: 472792374149052370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 46
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705349ed61c3dcfa0800000000000000
+      internalID: -5778896677925276409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 46
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1396b096dadcb4b00800000000000000
+      internalID: 813970302345898289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 46
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3f01bc2bf0c7400800000000000000
+      internalID: 323150533849314233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 46
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574058687c52b0da0800000000000000
+      internalID: -5977642541518617483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 46
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4268c175dfb3a40e0800000000000000
+      internalID: -2284947901662853596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 46
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3007ab7bf1289b0800000000000000
+      internalID: -5079462555753118813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knockaut1-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 46
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a6e2c53bfe79b40800000000000000
+      internalID: 5447085827952634485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      knockaut1-Sheet_0: 2557561879060456266
+      knockaut1-Sheet_1: -1640058145658930695
+      knockaut1-Sheet_10: -2284947901662853596
+      knockaut1-Sheet_11: -5079462555753118813
+      knockaut1-Sheet_12: 5447085827952634485
+      knockaut1-Sheet_2: 8373410908326949369
+      knockaut1-Sheet_3: -7250939681854261198
+      knockaut1-Sheet_4: -910845344306233287
+      knockaut1-Sheet_5: 472792374149052370
+      knockaut1-Sheet_6: -5778896677925276409
+      knockaut1-Sheet_7: 813970302345898289
+      knockaut1-Sheet_8: 323150533849314233
+      knockaut1-Sheet_9: -5977642541518617483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

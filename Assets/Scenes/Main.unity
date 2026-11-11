@@ -16740,11 +16740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.84
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.51
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16815,6 +16815,14 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _airControl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _comboResetTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _actions.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -16851,8 +16859,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 09384641445240a48a2a2f159adedb58, type: 2}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackVerticalForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _lightAttacks.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackHorizontalForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: '_lightAttacks.Array.data[0]'
@@ -17177,11 +17193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.53
+      value: 7.43
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 7472694523032429751, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17248,6 +17264,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _comboResetTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _actions.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -17284,8 +17304,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 09384641445240a48a2a2f159adedb58, type: 2}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackVerticalForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _lightAttacks.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackHorizontalForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: '_lightAttacks.Array.data[0]'
