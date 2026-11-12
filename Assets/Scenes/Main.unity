@@ -16811,8 +16811,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 651803636}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _jumpForce
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _airControl
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _actions.Array.size
@@ -16851,8 +16859,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 09384641445240a48a2a2f159adedb58, type: 2}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackVerticalForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _lightAttacks.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackHorizontalForce
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: '_lightAttacks.Array.data[0]'
@@ -17244,8 +17260,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 717323098}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _jumpForce
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _airControl
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _actions.Array.size
@@ -17284,8 +17308,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 09384641445240a48a2a2f159adedb58, type: 2}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackVerticalForce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: _lightAttacks.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
+      propertyPath: _knockbackHorizontalForce
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8582568684670444467, guid: 299f1f66b96c5ce4d90e079ed29d8063, type: 3}
       propertyPath: '_lightAttacks.Array.data[0]'

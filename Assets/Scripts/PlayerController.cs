@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor.Searcher;
 using UnityEngine;
 
@@ -15,8 +16,11 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private List<GameplayAction> _attacks;
     [SerializeField] private List<GameplayAction> _lightAttacks;
     [SerializeField] private GameplayAction _nextAction;
+    [SerializeField] private float _knockbackHorizontalForce;
+    [SerializeField] private float _knockbackVerticalForce;
     
-
+  
+    private float _knockbackForce;
     private float _lastPositionX;
     private Vector2 _direction;
     private Rigidbody2D _rigidbody2D;
@@ -26,17 +30,23 @@ public class PlayerController : MonoBehaviour {
     private Sprite _lastSprite;
     
     private readonly List<Vector2> _points = new();
-    
-    
+
+    public int currentHealth;
+    public int maxHealth;
     public Animator _animator;
     public GameObject _shield;
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
+    public State  CurrentState => _currentState;
     public float Speed => _speed;
     public float JumpForce => _jumpForce;
     public float AirControl => _airControl;
     public List<GameplayAction>Attacks => _attacks;
     public List<GameplayAction> LightAttacks => _lightAttacks;
+    public float KnockbackHorizontalForce => _knockbackHorizontalForce;
+    public float KnockbackVerticalForce => _knockbackVerticalForce;
+    public float KnockbackForce => _knockbackForce;
+    public Vector2 KnockbackDirection{ get; private set; }
     public bool IsGrounded {
         get {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, _groundCheckDistance, _groundLayer);
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour {
     private void Start() {
         _nextAction = _attacks.First();
         _nextAction = _lightAttacks.First();
+        currentHealth = maxHealth;
     }
 
     private void Update() {
@@ -140,7 +151,31 @@ public class PlayerController : MonoBehaviour {
 
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (!other.CompareTag("HurtBox")) return;
+        if(other.CompareTag("HurtBox") && currentHealth >= 0)
+        { 
+            if(currentHealth >= 0)
+            {
+                _knockbackForce = KnockbackHorizontalForce * KnockbackVerticalForce;
+                float side = Mathf.Sign(transform.position.x - other.transform.position.x);
+                KnockbackDirection = new Vector2(side, 0.4f);
+                PlayerController attacker = other.transform.parent.GetComponent<PlayerController>();
+                int damage = 0;
+                if(attacker.CurrentState is AttackState)
+                {
+                    damage = attacker.NextAction.Damage;
+                }
+                else if (attacker.CurrentState is LightAttackState)
+                {
+                    damage = attacker.NextAction.Damage;
+                }
+                SwitchState(new HitState(gameObject, damage));
+            }
+            else
+            {
+                SwitchState(new DeathState(gameObject));
+
+            }
+        }
     }
 
     private bool _hurtBoxActive;

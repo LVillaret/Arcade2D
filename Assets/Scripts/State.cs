@@ -25,5 +25,8 @@ public abstract class State {
     public virtual void OnUpdate() {
         if (Duration > 0f) _timer -= Time.deltaTime;
     }
-    public virtual void OnExit() {}
+
+    public virtual void OnExit() {
+        Animator.speed = 1;
+    }
 }

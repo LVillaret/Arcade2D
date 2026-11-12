@@ -10,7 +10,6 @@ public class LightAttackState : State
         base.OnEnter();
         
         _currentAction = PlayerController.NextAction;
-        
         InputController.IsLightAttacking.Stop();
         Animator.runtimeAnimatorController = _currentAction.animatorOverrideController;
         Animator.SetBool("IsLightAttacking", true);

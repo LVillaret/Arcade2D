@@ -9,8 +9,7 @@ public class AttackState : State
     public override void OnEnter() {
         base.OnEnter();
         
-       _currentAction = PlayerController.NextAction;
-        
+        _currentAction = PlayerController.NextAction;
         InputController.IsAttacking.Stop();
         Animator.runtimeAnimatorController = _currentAction.animatorOverrideController;
         Animator.SetBool("IsAttacking", true);
