@@ -1,8 +1,5 @@
-using System;
+
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
-using UnityEditor.Searcher;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -16,10 +13,18 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private List<GameplayAction> _attacks;
     [SerializeField] private List<GameplayAction> _lightAttacks;
     [SerializeField] private GameplayAction _nextAction;
+    [SerializeField] private GameplayAction _nextLightAction;
     [SerializeField] private float _knockbackHorizontalForce;
     [SerializeField] private float _knockbackVerticalForce;
+    [SerializeField] private float _maxShield = 100f;
+    [SerializeField] private float _shieldDrainPerSecond = 10f;
+    [SerializeField] private float _shieldDamagePerHit = 25f;
+    [SerializeField] private float _shieldRegenPerSecond = 20f;
+    [SerializeField] private float _shieldRegenDelay = 1.5f;
+    [SerializeField] private float _shieldMinToBlock = 20f;
+    [SerializeField] private float _jumpBufferDuration = 0.5f;
     
-  
+    private float _jumpBufferCounter;
     private float _knockbackForce;
     private float _lastPositionX;
     private Vector2 _direction;
@@ -30,11 +35,16 @@ public class PlayerController : MonoBehaviour {
     private Sprite _lastSprite;
     
     private readonly List<Vector2> _points = new();
-
+    private float _shieldHealth;
+    private float _lastShieldUseTime;
+    private Vector3 _shieldBaseScale;
+    
     public int currentHealth;
     public int maxHealth;
     public Animator _animator;
     public GameObject _shield;
+    
+    public float ShieldDrainPerSecond => _shieldDrainPerSecond;
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public SpriteRenderer SpriteRenderer => _spriteRenderer;
     public State  CurrentState => _currentState;
@@ -61,6 +71,12 @@ public class PlayerController : MonoBehaviour {
         set => _nextAction = value;
     }
 
+    public GameplayAction NextLightAction
+    {
+        get => _nextLightAction;
+        set => _nextLightAction = value;
+    }
+
     private void Awake() {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -70,17 +86,51 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Start() {
-        _nextAction = _attacks.First();
-        _nextAction = _lightAttacks.First();
+        if (_attacks != null && _attacks.Count > 0)
+        {
+            _nextAction = _attacks[0];
+        }
+        else
+        {
+            Debug.LogError("No attacks have been assigned");
+        }
+
+        if (_lightAttacks != null && _lightAttacks.Count > 0)
+        {
+            _nextLightAction = _lightAttacks[0];
+        }
+        else
+        {
+            Debug.LogError("No lightAttacks have been assigned");
+        }
+        //_nextAction = _attacks.First();
+        //_nextAction = _lightAttacks.First();
         currentHealth = maxHealth;
+        _shieldHealth = _maxShield;
+        _shieldBaseScale = _shield.transform.localScale;
     }
 
     private void Update() {
         
         Flip();
-        
+
+        if (_inputController.JumpPressed)
+        {
+            _jumpBufferCounter = _jumpBufferDuration;
+            _inputController.ConsumeJumpPressed();
+        }
+        else if (_currentState is not LandState && _jumpBufferCounter > 0f)
+        {
+            _jumpBufferCounter -= Time.deltaTime;
+        }
         _currentState.OnUpdate();
-        
+        UpdateShieldRegeneration();
+
+        if (currentHealth <= 0 && !(_currentState is DeathState))
+        {
+            SwitchState(new DeathState(gameObject));
+            return;
+        }
         
         // Transitions Attack
         if (_currentState is MoveState && _inputController.IsAttacking.Value) {
@@ -95,7 +145,8 @@ public class PlayerController : MonoBehaviour {
 
         if (_currentState is MoveState && _inputController.IsLightAttacking.Value)
         {
-            SwitchState(new LightAttackState(gameObject, _nextAction.Speed));
+            if (_nextLightAction == null) return;
+            SwitchState(new LightAttackState(gameObject, _nextLightAction.Speed));
             return;
         }
         
@@ -105,9 +156,10 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        if (_currentState is MoveState && _inputController.IsBlocking && IsGrounded)
+        if (_currentState is MoveState && _inputController.IsBlocking && IsGrounded && _shieldHealth >= _shieldMinToBlock)
         {
             SwitchState(new BlockState(gameObject));
+            return;
         }
 
         if (_currentState is BlockState && !_inputController.IsBlocking)
@@ -115,7 +167,9 @@ public class PlayerController : MonoBehaviour {
             SwitchState(new MoveState(gameObject));
         }
         //Transition Jump
-        if (_currentState is MoveState && _inputController.IsJumping && IsGrounded) {
+        if (_currentState is MoveState && _jumpBufferCounter > 0f && IsGrounded)
+        {
+            _jumpBufferCounter = 0f;
             SwitchState(new JumpState(gameObject));
             return;
         }
@@ -131,13 +185,32 @@ public class PlayerController : MonoBehaviour {
            SwitchState(new FallState(gameObject));
         }
          
-        if (_currentState is FallState && !_inputController.IsJumping && IsGrounded) {
+        if (_currentState is FallState &&  IsGrounded) {
             SwitchState(new LandState(gameObject, 0.2f));
         }
 
         if (_currentState is LandState {IsFinished: true})
         {
+            if (_jumpBufferCounter > 0f)
+            {
+                _jumpBufferCounter = 0f;
+                SwitchState(new JumpState(gameObject));
+            }
+            else
+            {
+                SwitchState(new MoveState(gameObject));
+            }
+            return;
+        }
+        //
+        if (_currentState is HitState { IsFinished: true })
+        {
             SwitchState(new MoveState(gameObject));
+        }
+        if (_currentState is StaggerState { IsFinished: true })
+        {
+            SwitchState(new MoveState(gameObject));
+            return;
         }
     }
     
@@ -148,34 +221,129 @@ public class PlayerController : MonoBehaviour {
         _currentState?.OnEnter();
         Debug.Log($"Entering State : {_currentState?.GetType().Name}");
     }
+    
+    public bool UseShield(float amount) {
+        _shieldHealth -= amount;
+        _shieldHealth = Mathf.Max(0, _shieldHealth);
+        
+        UpdateShieldScale();
+        
+        return _shieldHealth > 0;
+    }
+
+    private void UpdateShieldScale() {
+        float ratio = _shieldHealth / _maxShield;
+        _shield.transform.localScale = _shieldBaseScale * ratio;
+    }
+
+    public void DamageShield() {
+        bool shieldAlive = UseShield(_shieldDamagePerHit);
+        
+        _lastShieldUseTime = Time.time;
+
+        if (!shieldAlive)
+        {
+            BreakShield();
+        }
+    }
+
+    public void BreakShield() {
+        if (_currentState is BlockState)
+        {
+            SwitchState(new StaggerState(gameObject, 0.3f));
+        }
+    }
+
+    public void OnBlockEnded() {
+        _lastShieldUseTime =  Time.time;
+    }
+
+    private void UpdateShieldRegeneration() {
+        if (_currentState is BlockState || _currentState is StaggerState)
+        {
+            return;
+        }
+
+        if (_shieldHealth >_maxShield)
+        {
+            return;
+        }
+
+        if (Time.time < _lastShieldUseTime + _shieldRegenDelay)
+        {
+            return;
+        }
+        
+        _shieldHealth += _shieldRegenPerSecond *  Time.deltaTime;
+        _shieldHealth = Mathf.Min(_shieldHealth, _maxShield);
+        
+        UpdateShieldScale();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("HurtBox") && currentHealth >= 0)
-        { 
-            if(currentHealth >= 0)
-            {
-                _knockbackForce = KnockbackHorizontalForce * KnockbackVerticalForce;
-                float side = Mathf.Sign(transform.position.x - other.transform.position.x);
-                KnockbackDirection = new Vector2(side, 0.4f);
-                PlayerController attacker = other.transform.parent.GetComponent<PlayerController>();
-                int damage = 0;
-                if(attacker.CurrentState is AttackState)
-                {
-                    damage = attacker.NextAction.Damage;
-                }
-                else if (attacker.CurrentState is LightAttackState)
-                {
-                    damage = attacker.NextAction.Damage;
-                }
-                SwitchState(new HitState(gameObject, damage));
-            }
-            else
-            {
-                SwitchState(new DeathState(gameObject));
+        
+        if (currentHealth <= 0) return;
+        
 
-            }
+        if (!other.CompareTag("HurtBox")) return;
+        
+        PlayerController attacker = other.transform.parent.GetComponent<PlayerController>();
+
+        if (attacker == null || attacker == this) return;
+
+        if (_currentState is BlockState &&
+            (attacker.CurrentState is AttackState || attacker.CurrentState is LightAttackState))
+        {
+            DamageShield();
+            return;
         }
+        int damage = 0;
+
+        if (attacker._currentState is AttackState)
+        {
+            damage = attacker.NextAction.Damage;
+        }
+        else if (attacker._currentState is LightAttackState)
+        {
+            damage = attacker.NextLightAction.Damage;
+        }
+
+        if (damage <= 0) return;
+        
+        _knockbackForce = KnockbackHorizontalForce * KnockbackVerticalForce;
+        float side = Mathf.Sign(transform.position.x - other.transform.position.x);
+        KnockbackDirection = new Vector2(side, 0.4f);
+        SwitchState(new HitState(gameObject, damage));
+
+        /*if(other.CompareTag("HurtBox") && currentHealth >= 0)
+        {
+
+
+           ;
+            PlayerController attacker = other.transform.parent.GetComponent<PlayerController>();
+            int damage = 0;
+            if(attacker.CurrentState is AttackState)
+            {
+                damage = attacker.NextAction.Damage;
+            }
+            else if (attacker.CurrentState is LightAttackState)
+            {
+                damage = attacker.NextAction.Damage;
+            }
+            SwitchState(new HitState(gameObject, damage));
+
+        }
+        else if (currentHealth <= 0)
+        {
+            SwitchState(new DeathState(gameObject));
+
+        }*/
+    }
+    public void SwitchDeathState()
+    {
+        SwitchState(new DeathState(gameObject));
+        return;
     }
 
     private bool _hurtBoxActive;
@@ -213,6 +381,9 @@ public class PlayerController : MonoBehaviour {
     }
     
     private void Flip() {
+        
+        if (_currentState is AttackState || _currentState is LightAttackState)
+            return;
         if (_inputController.Move.x < 0)
         {
             _spriteRenderer.flipX = true;

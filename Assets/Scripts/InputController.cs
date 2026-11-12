@@ -8,7 +8,8 @@ public class InputController : MonoBehaviour {
         public bool IsJumping;
         public Trigger IsAttacking;
         public Trigger IsLightAttacking;
-        public bool IsBlocking;   
+        public bool IsBlocking; 
+        public bool JumpPressed { get; private set; }
 
         public void OnMove(InputValue value) {
                 Move = value.Get<Vector2>();
@@ -16,8 +17,16 @@ public class InputController : MonoBehaviour {
 
         public void OnJump(InputValue value) {
                 IsJumping = value.isPressed;
+
+                if (value.isPressed)
+                {
+                        JumpPressed = true;
+                }
         }
 
+        public void ConsumeJumpPressed() {
+                JumpPressed = false;
+        }
         public void OnAttack(InputValue value) {
                 if (value.isPressed) IsAttacking.Launch();
         }

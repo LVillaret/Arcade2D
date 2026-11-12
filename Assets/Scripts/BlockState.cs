@@ -2,24 +2,23 @@
 
 public class BlockState : State
 {
-    
-    private float _timer = 3f;
     public BlockState(GameObject host, float duration = -1) : base(host, duration) { }
 
     public override void OnEnter() {
         base.OnEnter();
         
         Animator.SetBool("IsBlocking", true);
+        PlayerController._shield.SetActive(true);
     }
 
     public override void OnUpdate() {
         base.OnUpdate();
         
-        PlayerController._shield.SetActive(true);
+        bool shieldActive = PlayerController.UseShield(PlayerController.ShieldDrainPerSecond * Time.deltaTime);
 
-        if (_timer <= 0)
+        if (!shieldActive)
         {
-            OnExit();
+            PlayerController.BreakShield();
         }
     }
 
@@ -28,5 +27,7 @@ public class BlockState : State
         
         PlayerController._shield.SetActive(false);
         Animator.SetBool("IsBlocking", false);
+
+        PlayerController.OnBlockEnded();
     }
 }

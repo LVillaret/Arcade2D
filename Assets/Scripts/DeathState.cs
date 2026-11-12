@@ -12,6 +12,5 @@ public class DeathState : State
 
     public override void OnExit() {
         base.OnExit();
-        Animator.SetBool("Death", false);
     }
 }

@@ -4,6 +4,7 @@ public class AttackState : State
 {
 
     public GameplayAction _currentAction;
+    
     public AttackState(GameObject host, float duration = -1) : base(host, duration) { }
 
     public override void OnEnter() {
@@ -21,7 +22,6 @@ public class AttackState : State
 
     public override void OnExit() {
         base.OnExit();
-        
         int index = PlayerController.Attacks.IndexOf(PlayerController.NextAction) +1;
         if (index >= PlayerController.Attacks.Count) index = 0;
         PlayerController.NextAction = PlayerController.Attacks[index];

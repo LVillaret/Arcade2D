@@ -13,8 +13,8 @@ public class JumpState : State {
 
     public override void OnUpdate() {
         base.OnUpdate();
-        
-        float velocity = InputController.Move.x * (PlayerController.AirControl * Time.deltaTime);
+        float velocity = InputController.Move.x * PlayerController.AirControl;
+       // float velocity = InputController.Move.x * (PlayerController.AirControl * Time.deltaTime);
         PlayerController.Rigidbody2D.linearVelocity = new Vector2(velocity, PlayerController.Rigidbody2D.linearVelocity.y);
     }
 
