@@ -4,7 +4,6 @@ public class HitState : State
 {
     //public Color _baseColor;
     private int _damage;
-
     public HitState(GameObject host, int damage, float duration = 0.5f) : base(host, duration) {
         _damage = damage;
     }
@@ -14,7 +13,6 @@ public class HitState : State
        // _baseColor = PlayerController.SpriteRenderer.color;
        // PlayerController.SpriteRenderer.color = Color.red;
         PlayerController.currentHealth = Mathf.Max(0, PlayerController.currentHealth - _damage);
-        
         Debug.Log("Dégâts reçus : " + _damage);
         Debug.Log("Vie restante : " + PlayerController.currentHealth);
         

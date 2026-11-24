@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float _shieldMinToBlock = 20f;
     [SerializeField] private float _jumpBufferDuration = 0.5f;
     
+    
     private float _jumpBufferCounter;
     private float _knockbackForce;
     private float _lastPositionX;
@@ -34,11 +35,13 @@ public class PlayerController : MonoBehaviour {
     private InputController _inputController;
     private Sprite _lastSprite;
     
+    
     private readonly List<Vector2> _points = new();
     private float _shieldHealth;
     private float _lastShieldUseTime;
     private Vector3 _shieldBaseScale;
     
+    public ParticleSystem _psBlood;
     public int currentHealth;
     public int maxHealth;
     public Animator _animator;
@@ -57,6 +60,7 @@ public class PlayerController : MonoBehaviour {
     public float KnockbackVerticalForce => _knockbackVerticalForce;
     public float KnockbackForce => _knockbackForce;
     public Vector2 KnockbackDirection{ get; private set; }
+    //public ParticleSystem  PSBlood => _psBlood;
     public bool IsGrounded {
         get {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, _groundCheckDistance, _groundLayer);
